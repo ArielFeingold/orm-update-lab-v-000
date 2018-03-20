@@ -61,6 +61,4 @@ class Student
     student.grade = row[2]
     student
   end
-
-  end
 end
