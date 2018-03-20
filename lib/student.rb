@@ -6,7 +6,7 @@ class Student
 
   attr_accessor :name, :grade, :id
 
-  def initialize(id = nil)
+  def initialize(name, grade, id = nil)
     @name = name
     @grade = grade
     @id = id
@@ -56,7 +56,7 @@ class Student
   end
 
   def self.new_from_db(row)
-    # binding.pry
+    binding.pry
     student = self.new(name, grade)
     student.id = row[0]
     student.name = row[1]
